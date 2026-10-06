@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+Admin Dashboard
+{% endblock %}
+
+{% block content %}
+
+<section class="admin-dashboard">
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+
+            <h2>{{ total_products }}</h2>
+
+            <p>Total Products</p>
+
+        </div>
+
+    </div>
+
+    <div class="admin-actions">
+
+        <a href="/admin/products" class="admin-btn">
+            Manage Products
+        </a>
+
+        <a href="/admin/add-product" class="admin-btn">
+            Add Product
+        </a>
+        <a href="/admin/logout" class="delete-btn">
+    Logout
+</a>
+<a href="/admin/change-password"
+   class="admin-btn">
+
+   Change Password
+
+</a>
+
+    </div>
+
+</section>
+
+{% endblock %}

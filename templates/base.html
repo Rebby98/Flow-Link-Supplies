@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Plumbing Store{% endblock %}</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+          <link rel="icon"
+      href="https://res.cloudinary.com/u0gtoeqt/image/upload/v1784883760/plumbing_favicon_j7hw3x.png">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+
+        <a href="/" class="logo-container">
+
+            <img src="{{ url_for('static', filename='images/Flow link logo.png') }}"
+                 alt="Flow Link Logo">
+
+            <div class="logo-text">
+                <h2>Flow Link</h2>
+                <p>General Hardware & Supplies</p>
+            </div>
+
+        </a>
+
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-links">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+
+        <li><a href="/products">Products</a></li>
+
+        <li><a href="/services">Services</a></li>
+
+        <li><a href="/contact">Contact</a></li>
+
+        <li>
+            <a href="/products" class="cart-link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                Place Order
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>
+                    We provide quality plumbing equipment,
+                    fittings, water solutions, and professional plumbing services.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3>Contact</h3>
+
+                <p>Email: flowlinksupplies@gmail.com</p>
+                <p>Phone: +254101054503</p>
+                <p>Ruiru, Kiambu, Kenya</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <p>© 2026 Flow Link. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/254101054503"
+   class="whatsapp-float"
+   target="_blank">
+
+   <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+</body>
+</html>

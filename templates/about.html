@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+
+{% block title %}About Us | Flow Link{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="about-hero">
+
+    <div class="about-hero-content">
+
+        <span class="section-tag">Who We Are</span>
+
+        <h1>Building Better Projects with Quality Hardware & Plumbing Solutions</h1>
+
+        <p>
+            Flow Link is your trusted partner for quality
+            plumbing products, hardware supplies, and dependable solutions for
+            homes, businesses, contractors, and construction projects.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Our Story -->
+<section class="about-story">
+
+    <div class="story-image">
+
+        <img src="{{ url_for('static', filename='images/Flow link logo.png') }}"
+             alt="Flow Link Hardware Store">
+
+    </div>
+
+    <div class="story-content">
+
+        <span class="section-tag">Our Story</span>
+
+        <h2>Serving Quality. Delivering Trust.</h2>
+
+        <p>
+            At Flow Link, we believe that every successful
+            project begins with reliable materials. Our goal is to provide quality
+            plumbing products, hardware supplies, and practical solutions that meet
+            the needs of homeowners, plumbers, contractors, and businesses.
+        </p>
+
+        <p>
+            From pipes and fittings to water tanks, pumps, sanitary ware, and
+            plumbing accessories, we carefully source products that combine
+            durability, performance, and value for money.
+        </p>
+
+        <p>
+            We are committed to building lasting relationships through excellent
+            customer service, expert advice, and dependable products you can trust.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Mission & Vision -->
+<section class="mission-section">
+
+    <div class="mission-card">
+
+        <i class="fa-solid fa-bullseye"></i>
+
+        <h3>Our Mission</h3>
+
+        <p>
+            To provide quality hardware and plumbing products with exceptional
+            customer service, ensuring every customer finds reliable solutions
+            for their projects.
+        </p>
+
+    </div>
+
+    <div class="mission-card">
+
+        <i class="fa-solid fa-eye"></i>
+
+        <h3>Our Vision</h3>
+
+        <p>
+            To become Kenya's preferred supplier of quality hardware and plumbing
+            solutions by building trust, reliability, and long-term customer
+            relationships.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-us">
+
+    <div class="section-heading">
+
+        <span class="section-tag">Why Choose Us</span>
+
+        <h2>Why Customers Choose Flow Link</h2>
+
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <i class="fa-solid fa-award"></i>
+            <h3>Quality Products</h3>
+            <p>We stock dependable products from trusted manufacturers.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h3>Affordable Prices</h3>
+            <p>Competitive pricing without compromising on quality.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fa-solid fa-user-gear"></i>
+            <h3>Expert Advice</h3>
+            <p>Friendly guidance to help you choose the right products.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Reliable Service</h3>
+            <p>Prompt service and dependable support for every customer.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Products -->
+<section class="offer-section">
+
+    <div class="section-heading">
+
+        <span class="section-tag">What We Offer</span>
+
+        <h2>Complete Hardware & Plumbing Solutions</h2>
+
+    </div>
+
+    <div class="offer-grid">
+
+        <div class="offer-item">
+            <i class="fa-solid fa-water"></i>
+            <h4>Pipes & Fittings</h4>
+        </div>
+
+        <div class="offer-item">
+            <i class="fa-solid fa-faucet"></i>
+            <h4>Bathroom Accessories</h4>
+        </div>
+
+        <div class="offer-item">
+            <i class="fa-solid fa-droplet"></i>
+            <h4>Water Tanks</h4>
+        </div>
+
+        <div class="offer-item">
+            <i class="fa-solid fa-gears"></i>
+            <h4>Plumbing Tools</h4>
+        </div>
+
+        <div class="offer-item">
+            <i class="fa-solid fa-fan"></i>
+            <h4>Water Pumps</h4>
+        </div>
+
+        <div class="offer-item">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h4>General Hardware</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="about-cta">
+
+    <h2>Ready to Find the Right Hardware Solutions?</h2>
+
+    <p>
+        Browse our quality products or contact our team for professional advice
+        and personalized assistance.
+    </p>
+
+    <div class="cta-buttons">
+
+        <a href="/products" class="primary-btn">
+            Browse Products
+        </a>
+
+        <a href="/contact" class="secondary-btn">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}
+Our Products
+{% endblock %}
+
+{% block content %}
+
+<!-- PRODUCTS HERO -->
+<section class="products-hero">
+
+    <div class="products-hero-content">
+
+        <h1>Our Plumbing Products</h1>
+
+        <p>
+            Explore quality plumbing equipment,
+            fittings, pumps, tanks, tools, and accessories.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTS PAGE -->
+<section class="products-page">
+
+    <!-- SIDEBAR -->
+    <aside class="products-sidebar">
+
+        <h2>Categories</h2>
+
+        <ul>
+
+    <li>
+        <a href="#" class="category-btn" data-filter="all">
+            All Products
+        </a>
+    </li>
+
+    {% for category in categories %}
+
+    <li>
+        <a href="#"
+           class="category-btn"
+           data-filter="{{ category.name|lower }}">
+            {{ category.name }}
+        </a>
+    </li>
+
+    {% endfor %}
+
+</ul>
+
+
+    </aside>
+
+    <!-- PRODUCTS CONTENT -->
+    <div class="products-content">
+
+        <!-- SEARCH BAR -->
+        <div class="products-topbar">
+            <input
+    type="text"
+    id="product-search"
+    placeholder="Search products...">
+
+
+
+        </div>
+
+        <!-- PRODUCTS GRID -->
+         <div class="products-grid">
+
+{% for product in products %}
+
+
+ <div class="product-card"
+     data-category="{{ product.category.name|lower }}">
+
+{% if product.image.startswith('http') %}
+    <img src="{{ product.image }}" alt="{{ product.name }}">
+{% else %}
+    <img src="{{ url_for('static', filename='uploads/' + product.image) }}" alt="{{ product.name }}">
+{% endif %}
+
+    <div class="product-info">
+
+        <h3>{{ product.name }}</h3>
+
+        <p>{{ product.description }}</p>
+
+        <p class="price">
+            Ksh {{ product.price }}
+        </p>
+
+        <a href="https://wa.me/254101054503?text=Hello%20Flow%20Link,%20I%20am%20interested%20in%20{{ product.name }}"
+           target="_blank"
+           class="order-btn">
+
+           Order Now
+
+        </a>
+
+    </div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+           
+
+
+
+{% endblock %}

@@ -1,0 +1,238 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Quality Hardware and Plumbing Equipment & Solutions
+        </h1>
+
+        <p>
+            Pipes, fittings, tanks, pumps, bathroom accessories,
+            and professional plumbing solutions at affordable prices.
+        </p>
+
+        <a href="/products" class="hero-btn">
+            Shop Now
+        </a>
+
+    </div>
+
+</section>
+<!-- About Section -->
+<section class="about-home">
+
+    <div class="about-content">
+
+        <span class="section-tag">About Us</span>
+
+        <h2>Your Trusted Partner for Quality Hardware & Plumbing Solutions</h2>
+
+        <p>
+            At <strong>Flow Link</strong>, we are committed to providing high-quality plumbing materials, hardware products, and reliable solutions for homes, businesses, and construction projects. From pipes and fittings to water tanks, pumps, and bathroom accessories, we stock products from trusted brands to ensure durability and value.
+        </p>
+
+        <p>
+            Whether you're a homeowner, contractor, or plumber, our knowledgeable team is here to help you find the right products and solutions for every project.
+        </p>
+
+        <a href="/about" class="learn-more-btn">
+            Learn More
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+    <div class="about-image">
+        <img src="{{ url_for('static', filename='images/Flow link logo.png') }}" alt="Flow Link Hardware Store">
+    </div>
+
+</section>
+
+<!-- Featured Products -->
+<section class="featured-products">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            Quality You Can Trust
+        </span>
+
+        <h2>
+            Featured Plumbing Products
+        </h2>
+
+        <p>
+            Discover our most popular plumbing supplies trusted by
+            contractors, plumbers and homeowners across Kenya.
+        </p>
+
+    </div>
+
+    <div class="products-grid">
+
+        <!-- Product 1 -->
+
+        <div class="product-card">
+
+            <span class="badge best">
+                ★ Best Seller
+            </span>
+
+<img
+    src="https://res.cloudinary.com/u0gtoeqt/image/upload/v1784881931/flex_tubes_sbkwcl.jpg"
+    alt="Flex Tubes">
+
+            <div class="product-info">
+
+                <h3>Flex Tubes</h3>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <div class="price">
+                    KSh 300
+                </div>
+
+                <p>
+                    Durable flex tubes designed for
+                    efficient and reliable water supply.
+                </p>
+
+                <a href="{{ url_for('products') }}" class="product-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Product 2 -->
+
+        <div class="product-card">
+
+            <span class="badge premium">
+                Premium
+            </span>
+<img
+    src="https://res.cloudinary.com/u0gtoeqt/image/upload/v1784729333/sawara-products/dxvlalnaubvs4jvs6muz.jpg"
+    alt="Wall Sprout Taps">
+
+            <div class="product-info">
+
+                <h3>Wall Sprout Taps</h3>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <div class="price">
+                    KSh 800
+                </div>
+
+                <p>
+                    Elegant chrome finish perfect for bathrooms
+                    and kitchens.
+                </p>
+
+                <a href="{{ url_for('products') }}" class="product-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Product 3 -->
+
+        <div class="product-card">
+
+            <span class="badge new">
+                New Arrival
+            </span>
+
+            <img
+                src="https://res.cloudinary.com/u0gtoeqt/image/upload/v1784881964/PPR_Machine_small_mn8hbl.png"
+                alt="PPR Machine">
+
+            <div class="product-info">
+
+                <h3>PPR Machine Small</h3>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <div class="price">
+                    KSh 1,500
+                </div>
+
+                <p>
+                    Professional welding machine suitable for
+                    all PPR installations.
+                </p>
+
+                <a href="{{ url_for('products') }}" class="product-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="view-all">
+
+        <a href="{{ url_for('products') }}">
+            View All Products →
+        </a>
+
+    </div>
+
+</section>
+<!-- DELIVERY HIGHLIGHT -->
+<section class="delivery-section">
+
+    <div class="delivery-container">
+
+        <div class="delivery-text">
+
+            <h2>Fast & Reliable Delivery</h2>
+
+            <p>
+                We deliver plumbing materials, fittings,
+                valves, pumps, water tanks, bathroom accessories,
+                and hardware supplies directly to your home,
+                business, or construction site.
+
+                Enjoy convenient and timely delivery services
+                for all your plumbing and hardware needs.
+            </p>
+
+            <a href="https://wa.me/254101054503?text=Hello%20Flow%20Link,%20I%20would%20like%20to%20inquire%20about%20delivery."
+               target="_blank"
+               class="delivery-btn">
+
+                Request Delivery
+
+            </a>
+
+        </div>
+
+        <div class="delivery-image">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
